@@ -8,18 +8,10 @@ public class DigitsSum {
 
     public void printDigitsSum(int t) {
         int sum = 0;
-        while (t > 0) {
-            sum += t % 10;
+        while (Math.abs(t) > 0) {
+            sum += Math.abs(t) % 10;
             t /= 10;
         }
-
-        //Второй вариант
-        /*String tString = Integer.toString(t);
-        char[] tStringChar = tString.toCharArray();
-        int sum = 0;
-        for (int i = 0; i < tStringChar.length; i++) {
-            sum += Integer.parseInt(Character.toString(tStringChar[i]));
-        }*/
         System.out.println(sum);
 
     }

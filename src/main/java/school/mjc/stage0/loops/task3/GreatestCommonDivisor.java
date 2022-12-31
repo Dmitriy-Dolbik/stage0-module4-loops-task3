@@ -13,6 +13,6 @@ public class GreatestCommonDivisor {
             first = temp;
             result = temp;
         }
-        System.out.println(result);
+        System.out.print(result);
     }
 }

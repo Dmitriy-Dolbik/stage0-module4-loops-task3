@@ -12,7 +12,7 @@ public class NinesSum {
             sum += nines;
             nines += (int) (9 * Math.pow(10, i - 1));
         }
-        System.out.print(sum);
+        System.out.println(sum);
 
     }
 }
